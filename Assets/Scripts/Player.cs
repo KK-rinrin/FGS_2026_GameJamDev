@@ -3,12 +3,16 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public class Player : SoundManagerScript
 {
     private Rigidbody2D rb;
 
+<<<<<<< HEAD
+    [SerializeField] private AudioSource main_audiosource;
+=======
     private Animator animator;
 
+>>>>>>> upstream/main
     private SpriteRenderer sprite;
     [Header("HP管理スクリプト")]
     [SerializeField] private PlayerHpScript playerHpScript;
@@ -56,6 +60,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PlayMainBgm(main_audiosource);
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
@@ -74,9 +79,16 @@ public class Player : MonoBehaviour
         state = PlayerState.Running;
     }
 
+
     // Update is called once per frame
     void Update()
     {
+        #if DEBUG
+        if (Input.GetKeyDown(KeyCode.Return)){
+            OnJumpSE();
+        }
+        #endif
+
         switch(state)
         {
             case PlayerState.None:
@@ -109,6 +121,7 @@ public class Player : MonoBehaviour
 
         if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
         {
+            OnJumpSE();
             // ジャンプの力を重力の符号によって向きを変えながら与える
             rb.AddForce(new Vector2(0.0f, kJumpPower * Mathf.Sign(rb.gravityScale)));
 
@@ -122,7 +135,7 @@ public class Player : MonoBehaviour
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 state = PlayerState.Inverting;
-
+                OnReverseSE();
                 rb.gravityScale *= -1.0f;
 
                 sprite.flipY = !sprite.flipY;
@@ -189,6 +202,7 @@ public class Player : MonoBehaviour
         {
             if(state != PlayerState.Damage)
             {
+                OnCollisionSE();
                 state = PlayerState.Damage;
                 animator.Play("player_damage");
                 timeCount = 0.0f;
