@@ -21,4 +21,9 @@ public class StartingScript : MonoBehaviour
         Application.Quit();
         #endif
     }
+
+    public void RetryGameBTN()
+    {
+        Initiate.Fade("TitleScene", Color.black, 1.0f);
+    }
 }
