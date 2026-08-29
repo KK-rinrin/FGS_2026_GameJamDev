@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: da2b5d3191c6b4f4284048bf8d1692ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -157050860189753057
+    second: Obstacle_Assets_0
+  - first:
+      213: 8938156278069392920
+    second: Obstacle_Assets_1
+  - first:
+      213: 1922014468644146696
+    second: Obstacle_Assets_2
+  - first:
+      213: 2223173271840641151
+    second: Obstacle_Assets_3
+  - first:
+      213: -5905062021861940021
+    second: Obstacle_Assets_4
+  - first:
+      213: -2416155089015261527
+    second: Obstacle_Assets_5
+  - first:
+      213: -8909113155261532920
+    second: Obstacle_Assets_6
+  - first:
+      213: 7350625815165709271
+    second: Obstacle_Assets_7
+  - first:
+      213: 7765089210566800734
+    second: Obstacle_Assets_8
+  - first:
+      213: 87889366022262655
+    second: Obstacle_Assets_9
+  - first:
+      213: -3800800755668076338
+    second: Obstacle_Assets_10
+  - first:
+      213: 7214527622382371894
+    second: Obstacle_Assets_11
+  - first:
+      213: 8774267896975835949
+    second: Obstacle_Assets_12
+  - first:
+      213: -6136918582641177680
+    second: Obstacle_Assets_13
+  - first:
+      213: 111850824058484367
+    second: Obstacle_Assets_14
+  - first:
+      213: 3985403953813432258
+    second: Obstacle_Assets_15
+  - first:
+      213: -1464001673064460494
+    second: Obstacle_Assets_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Obstacle_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 585
+        width: 64
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1168b2231b02ddf0800000000000000
+      internalID: -157050860189753057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 644
+        width: 158
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816f04d47c5ba0c70800000000000000
+      internalID: 8938156278069392920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 616
+        width: 60
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e02b8d9fd5caa10800000000000000
+      internalID: 1922014468644146696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_3
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 670
+        width: 167
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f705436df4c4ade10800000000000000
+      internalID: 2223173271840641151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 98
+        width: 126
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4e442a0610d0ea0800000000000000
+      internalID: -5905062021861940021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 91
+        width: 342
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a63ef47fb7187ed0800000000000000
+      internalID: -2416155089015261527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_6
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 317
+        width: 60
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80570eca9c87c5480800000000000000
+      internalID: -8909113155261532920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 312
+        width: 93
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dba4cdcb3ba20660800000000000000
+      internalID: 7350625815165709271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_8
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 315
+        width: 140
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e557d0dee7323cb60800000000000000
+      internalID: 7765089210566800734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_9
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 289
+        width: 51
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f8a49a9ee383100800000000000000
+      internalID: 87889366022262655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_10
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 268
+        width: 538
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec83e58a9d7d04bc0800000000000000
+      internalID: -3800800755668076338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 96
+        width: 74
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634485af5a62f1460800000000000000
+      internalID: 7214527622382371894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 97
+        width: 270
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23cb5b0a2674c970800000000000000
+      internalID: 8774267896975835949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_13
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 94
+        width: 53
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbcd2a501945daa0800000000000000
+      internalID: -6136918582641177680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_14
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 99
+        width: 541
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8637db5bbf5d8100800000000000000
+      internalID: 111850824058484367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 99
+        width: 541
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7ac79c7cffe4730800000000000000
+      internalID: 3985403953813432258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obstacle_Assets_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 8
+        width: 123
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f4a662c32deabe0800000000000000
+      internalID: -1464001673064460494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Obstacle_Assets_0: -157050860189753057
+      Obstacle_Assets_1: 8938156278069392920
+      Obstacle_Assets_10: -3800800755668076338
+      Obstacle_Assets_11: 7214527622382371894
+      Obstacle_Assets_12: 8774267896975835949
+      Obstacle_Assets_13: -6136918582641177680
+      Obstacle_Assets_14: 111850824058484367
+      Obstacle_Assets_15: 3985403953813432258
+      Obstacle_Assets_16: -1464001673064460494
+      Obstacle_Assets_2: 1922014468644146696
+      Obstacle_Assets_3: 2223173271840641151
+      Obstacle_Assets_4: -5905062021861940021
+      Obstacle_Assets_5: -2416155089015261527
+      Obstacle_Assets_6: -8909113155261532920
+      Obstacle_Assets_7: 7350625815165709271
+      Obstacle_Assets_8: 7765089210566800734
+      Obstacle_Assets_9: 87889366022262655
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
