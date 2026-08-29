@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 52f0d797a2918f9489169d2a004673f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1167873515833784502
+    second: pngtree-red-apple-fruit-png-png-image_13344560_0
+  - first:
+      213: -2545154413113882235
+    second: pngtree-red-apple-fruit-png-png-image_13344560_1
+  - first:
+      213: 938666056312827634
+    second: pngtree-red-apple-fruit-png-png-image_13344560_2
+  - first:
+      213: -5779827354765519418
+    second: pngtree-red-apple-fruit-png-png-image_13344560_3
+  - first:
+      213: -2986529856678797726
+    second: pngtree-red-apple-fruit-png-png-image_13344560_4
+  - first:
+      213: 4834553546152852599
+    second: pngtree-red-apple-fruit-png-png-image_13344560_5
+  - first:
+      213: 7448938399662315547
+    second: pngtree-red-apple-fruit-png-png-image_13344560_6
+  - first:
+      213: 6980688496579547400
+    second: pngtree-red-apple-fruit-png-png-image_13344560_7
+  - first:
+      213: 822953917343880083
+    second: pngtree-red-apple-fruit-png-png-image_13344560_8
+  - first:
+      213: -1912092769757765657
+    second: pngtree-red-apple-fruit-png-png-image_13344560_9
+  - first:
+      213: 5239944052684573492
+    second: pngtree-red-apple-fruit-png-png-image_13344560_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 16
+        width: 1194
+        height: 1177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8fbd566ce153010800000000000000
+      internalID: 1167873515833784502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1065
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58944dbcb8bcdacd0800000000000000
+      internalID: -2545154413113882235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe2e311ecfc60d00800000000000000
+      internalID: 938666056312827634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 946
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c59d18c4ade9cfa0800000000000000
+      internalID: -5779827354765519418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_4
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1065
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26edf8d2be6bd86d0800000000000000
+      internalID: -2986529856678797726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cbb0ee5d8c71340800000000000000
+      internalID: 4834553546152852599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 13
+        width: 1182
+        height: 1048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1893a12202ff5760800000000000000
+      internalID: 7448938399662315547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1008
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801974ec33360e060800000000000000
+      internalID: 6980688496579547400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1046
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3935cc54a38bb6b00800000000000000
+      internalID: 822953917343880083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_9
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1008
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efdef0b1c1e675e0800000000000000
+      internalID: -1912092769757765657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-red-apple-fruit-png-png-image_13344560_10
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1046
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b4f2f7a5508b840800000000000000
+      internalID: 5239944052684573492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b531994f6e437db4a842152922332597
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-red-apple-fruit-png-png-image_13344560_0: 1167873515833784502
+      pngtree-red-apple-fruit-png-png-image_13344560_1: -2545154413113882235
+      pngtree-red-apple-fruit-png-png-image_13344560_10: 5239944052684573492
+      pngtree-red-apple-fruit-png-png-image_13344560_2: 938666056312827634
+      pngtree-red-apple-fruit-png-png-image_13344560_3: -5779827354765519418
+      pngtree-red-apple-fruit-png-png-image_13344560_4: -2986529856678797726
+      pngtree-red-apple-fruit-png-png-image_13344560_5: 4834553546152852599
+      pngtree-red-apple-fruit-png-png-image_13344560_6: 7448938399662315547
+      pngtree-red-apple-fruit-png-png-image_13344560_7: 6980688496579547400
+      pngtree-red-apple-fruit-png-png-image_13344560_8: 822953917343880083
+      pngtree-red-apple-fruit-png-png-image_13344560_9: -1912092769757765657
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
