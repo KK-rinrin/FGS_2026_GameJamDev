@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
 
     private SpriteRenderer sprite;
+    [Header("HP管理スクリプト")]
+    [SerializeField] private PlayerHpScript playerHpScript;
 
     [Header("チェックポイント管理オブジェクト")]
     [SerializeField] private CheckPointManager pointManager;
@@ -54,6 +56,17 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+
+        if (playerHpScript == null)
+        {
+            playerHpScript = FindAnyObjectByType<PlayerHpScript>();
+        }
+
+        if (playerHpScript == null)
+        {
+            Debug.LogError("PlayerHpScript が見つかりません。Inspector で設定するか、シーンに配置してください。");
+        }
+
         currentInvertTime = kInvertCoolTime;
         state = PlayerState.Running;
     }
@@ -129,6 +142,12 @@ public class Player : MonoBehaviour
         if (timeCount > kStunTime)
         {
             TurningBack();
+            print("*****");
+            if (playerHpScript != null)
+            {
+                int x = playerHpScript.HpMinus(1);
+                print(x);
+            }
             state = PlayerState.Waiting;
         }
     }
