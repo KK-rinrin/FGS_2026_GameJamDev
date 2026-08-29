@@ -1,19 +1,24 @@
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class PlayerHpScript : MonoBehaviour
 {
-    [SerializeField] private static int player_hp = 0;
+    [SerializeField] private int player_hp = 5;
     [SerializeField] private List<GameObject> heart_list;
-    private int total_hp;
+    private int total_hp = 5;
+
+    void Awake()
+    {
+        if (heart_list != null && heart_list.Count > 0)
+        {
+            total_hp = heart_list.Count;
+            player_hp = Mathf.Clamp(player_hp, 0, total_hp);
+        }
+    }
 
     void Start()
     {
-        total_hp = heart_list.Count;
-        player_hp = total_hp;
+        print("+++++");
     }
 
     void Update()
@@ -30,15 +35,32 @@ public class PlayerHpScript : MonoBehaviour
         #endif
     }
 
-    private int HpMinus(int damage)
+    public int HpMinus(int damage)
     {
-        if (damage > total_hp || damage < 1){
+        print("damage : " + damage + " ** totatl_hp : " + total_hp);
+        if (heart_list == null || heart_list.Count == 0)
+        {
+            Debug.LogError("heart_list is null or empty");
+            return -1;
+        }
+
+        total_hp = heart_list.Count;
+
+        if (damage > total_hp || damage <= 0){
             return -1;
         }
         for (int i = 0 ; i < damage ; i++){
             if (player_hp - 1 < 0){
                 break;
             }
+
+            if (player_hp - 1 >= heart_list.Count || heart_list[player_hp - 1] == null)
+            {
+                Debug.LogError("heart_list count insufficient");
+                return -1;
+            }
+
+            print("len : " + heart_list.Count + " ** playerhp : " + player_hp);
             heart_list[player_hp - 1].GetComponent<UnityEngine.UI.Image>().enabled = false;
             player_hp--;
         }
