@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: ce3ecc96b55934656813b93a338da78c
-=======
 guid: e50aaf4788e7f1f48913c6b8baac2559
->>>>>>> upstream/main
 AudioImporter:
   externalObjects: {}
   serializedVersion: 8
