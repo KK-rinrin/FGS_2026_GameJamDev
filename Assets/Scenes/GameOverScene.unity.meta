@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/GameOverScene.unity.meta
 guid: 1ea592fa333484614ab227f04253a97a
+========
+guid: d99de1209011ad44cbd8e9659b2cfa88
+>>>>>>>> upstream/main:Assets/Scenes/KaminagaScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

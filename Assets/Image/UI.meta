@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: c49374fdc6bdf40da9bfc1ea9c765f9b
 folderAsset: yes
 DefaultImporter:
@@ -13,6 +14,11 @@ folderAsset: yes
 DefaultImporter:
 >>>>>>>> 70df47d (UI画像Unityメタデータ付与):Assets/Image/UI.meta
 >>>>>>> 70df47d (UI画像Unityメタデータ付与)
+=======
+guid: 936e61d177c380140a0c8edef9dffe06
+folderAsset: yes
+DefaultImporter:
+>>>>>>> upstream/main
   externalObjects: {}
   userData: 
   assetBundleName: 
