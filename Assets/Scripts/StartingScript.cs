@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEditor;
 
 public class StartingScript : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class StartingScript : MonoBehaviour
 
     public void QuitGameBTN()
     {
+        #if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+        #else
         Application.Quit();
+        #endif
     }
 }
