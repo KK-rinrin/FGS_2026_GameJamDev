@@ -7,7 +7,12 @@ public class Player : SoundManagerScript
 {
     private Rigidbody2D rb;
 
+<<<<<<< HEAD
     [SerializeField] private AudioSource main_audiosource;
+=======
+    private Animator animator;
+
+>>>>>>> upstream/main
     private SpriteRenderer sprite;
     [Header("HP管理スクリプト")]
     [SerializeField] private PlayerHpScript playerHpScript;
@@ -57,6 +62,7 @@ public class Player : SoundManagerScript
     {
         PlayMainBgm(main_audiosource);
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
 
         if (playerHpScript == null)
@@ -120,6 +126,8 @@ public class Player : SoundManagerScript
             rb.AddForce(new Vector2(0.0f, kJumpPower * Mathf.Sign(rb.gravityScale)));
 
             isJumping = true;
+
+            animator.Play("player_jump");
         }
 
         if (currentInvertTime > kInvertCoolTime && !isJumping)
@@ -140,7 +148,6 @@ public class Player : SoundManagerScript
     }
     private void InvertUpdate()
     {
-
     }
 
     private void DamageUpdate()
@@ -148,6 +155,8 @@ public class Player : SoundManagerScript
         timeCount += Time.deltaTime;
 
         rb.linearVelocityX = 0.0f;
+
+        rb.bodyType = RigidbodyType2D.Static;
 
         if (timeCount > kStunTime)
         {
@@ -158,6 +167,8 @@ public class Player : SoundManagerScript
                 int x = playerHpScript.HpMinus(1);
                 print(x);
             }
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            animator.Play("player_wait");
             state = PlayerState.Waiting;
         }
     }
@@ -170,6 +181,7 @@ public class Player : SoundManagerScript
 
         if(timeCount > kWaitTime)
         {
+            animator.Play("player_run");
             state = PlayerState.Running;
             currentInvertTime = kInvertCoolTime;
         }
@@ -192,12 +204,15 @@ public class Player : SoundManagerScript
             {
                 OnCollisionSE();
                 state = PlayerState.Damage;
+                animator.Play("player_damage");
                 timeCount = 0.0f;
             }
         }
 
         if(collision.gameObject.CompareTag("Ground"))
         {
+            animator.Play("player_run");
+
             isJumping = false;
 
             if(state == PlayerState.Inverting)
