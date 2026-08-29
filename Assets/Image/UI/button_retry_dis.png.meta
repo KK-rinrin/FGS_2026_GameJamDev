@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ba6aa1e7421179468de2595d5b5f3d5
+guid: 4e2bbf4c3f0614b3ab1e4ac38ce47291
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1833538952048197075
-    second: button_hanten_dis_0
+      213: -847824782061950462
+    second: button_retry_dis_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_hanten_dis_0
+      name: button_retry_dis_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 131
-        height: 132
+        x: 5
+        y: 8
+        width: 289
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ddbcae56f9027910800000000000000
-      internalID: 1833538952048197075
+      spriteID: 20aac694adbeb34f0800000000000000
+      internalID: -847824782061950462
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_hanten_dis_0: 1833538952048197075
+      button_retry_dis_0: -847824782061950462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
