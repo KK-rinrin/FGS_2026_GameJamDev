@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7cb7e1e410a124f926ceec1b21ae05, type: 3}
   m_Name: SpeedUp
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: 
+  itemName: SpeedUp
   type: 0
-  value: 0
+  value: 1
