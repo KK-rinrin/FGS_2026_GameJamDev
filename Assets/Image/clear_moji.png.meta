@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: eb8b54be0cf625d4b97064f93a08bd07
+guid: 261d7448c5aa8494ab3c8146606add14
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1630754160294505459
-    second: kari_chochin_0
+      213: -1931834716157911171
+    second: clear_moji_0
+  - first:
+      213: 3344201507013157818
+    second: clear_moji_1
+  - first:
+      213: 5889774309717311115
+    second: clear_moji_2
+  - first:
+      213: 1374259545534577095
+    second: clear_moji_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kari_chochin_0
+      name: clear_moji_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 99
-        height: 272
+        x: 86
+        y: 381
+        width: 750
+        height: 767
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fb2858c44a91a610800000000000000
-      internalID: 1630754160294505459
+      spriteID: d7fd3aa9f8eb035e0800000000000000
+      internalID: -1931834716157911171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clear_moji_1
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 422
+        width: 715
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab368d26d8df86e20800000000000000
+      internalID: 3344201507013157818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clear_moji_2
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 335
+        width: 238
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8efbe1878eacb150800000000000000
+      internalID: 5889774309717311115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clear_moji_3
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 315
+        width: 238
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c937c886c9521310800000000000000
+      internalID: 1374259545534577095
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kari_chochin_0: 1630754160294505459
+      clear_moji_0: -1931834716157911171
+      clear_moji_1: 3344201507013157818
+      clear_moji_2: 5889774309717311115
+      clear_moji_3: 1374259545534577095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
