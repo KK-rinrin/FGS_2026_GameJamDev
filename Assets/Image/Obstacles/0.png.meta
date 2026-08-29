@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 345fca739967670468df141ac44c513b
+guid: a913ddfa2f341da49909b3c776e07393
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1848579774427316787
-    second: kari_player1_0
+      213: 5088316998373936774
+    second: 0_0
   - first:
-      213: 3236912948020104318
-    second: kari_player1_1
+      213: 8745284039982918138
+    second: 0_1
+  - first:
+      213: -1495796495427720775
+    second: 0_2
+  - first:
+      213: -82757199298946268
+    second: 0_3
+  - first:
+      213: 2590185811940133651
+    second: 0_4
+  - first:
+      213: 5961413574744084474
+    second: 0_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,62 +124,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kari_player1_0
+      name: 0_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 126
-        height: 214
+        y: 179
+        width: 249
+        height: 649
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcdb9464d768856e0800000000000000
-      internalID: -1848579774427316787
+      spriteID: 68e09a8d9555d9640800000000000000
+      internalID: 5088316998373936774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kari_player1_1
+      name: 0_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 0
-        width: 76
-        height: 67
+        x: 275
+        y: 173
+        width: 147
+        height: 289
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7cc9932d23dbec20800000000000000
-      internalID: 3236912948020104318
+      spriteID: af92317ff7d7d5970800000000000000
+      internalID: 8745284039982918138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 175
+        width: 541
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9a1c1330ddd3be0800000000000000
+      internalID: -1495796495427720775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_3
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 163
+        width: 685
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b1e2504ccf9def0800000000000000
+      internalID: -82757199298946268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_4
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 171
+        width: 103
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31bc2f6c54032f320800000000000000
+      internalID: 2590185811940133651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_5
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 247
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff00d1bf023bb250800000000000000
+      internalID: 5961413574744084474
       vertices: []
       indices: 
       edges: []
@@ -176,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fb3ab8fa3f26d7d4b9be3d85ab8cee4e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kari_player1_0: -1848579774427316787
-      kari_player1_1: 3236912948020104318
+      0_0: 5088316998373936774
+      0_1: 8745284039982918138
+      0_2: -1495796495427720775
+      0_3: -82757199298946268
+      0_4: 2590185811940133651
+      0_5: 5961413574744084474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
