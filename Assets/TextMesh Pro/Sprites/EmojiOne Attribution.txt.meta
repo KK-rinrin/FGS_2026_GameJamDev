@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
 guid: 381dcb09d5029d14897e55f98031fca5
 TextScriptImporter:
+========
+guid: 936e61d177c380140a0c8edef9dffe06
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 70df47d (UI画像Unityメタデータ付与):Assets/Image/UI.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
