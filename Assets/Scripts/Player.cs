@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     [Header("リスポーン後待つ時間")]
     [SerializeField] private float kWaitTime = 1.0f;
 
+    [Header("ジャンプの力")]
+    [SerializeField] private float kJumpPower = 700.0f;
+
     private float currentInvertTime = 0f;
 
     private float timeCount = 0f;
@@ -69,6 +72,7 @@ public class Player : MonoBehaviour
                 RunningUpdate();
                 break;
             case PlayerState.Inverting:
+                InvertUpdate();
                 break;
             case PlayerState.Jumping:
                 break;
@@ -87,15 +91,20 @@ public class Player : MonoBehaviour
     {
         currentInvertTime += Time.deltaTime;
 
-        if (Keyboard.current.pKey.wasPressedThisFrame)
+        if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
         {
-            rb.AddForce(new Vector2(0.0f, 700.0f));
+            // ジャンプの力を重力の符号によって向きを変えながら与える
+            rb.AddForce(new Vector2(0.0f, kJumpPower * Mathf.Sign(rb.gravityScale)));
+
+            isJumping = true;
         }
 
-        if (currentInvertTime > kInvertCoolTime)
+        if (currentInvertTime > kInvertCoolTime && !isJumping)
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
+                state = PlayerState.Inverting;
+
                 rb.gravityScale *= -1.0f;
 
                 sprite.flipY = !sprite.flipY;
@@ -105,6 +114,10 @@ public class Player : MonoBehaviour
         }
 
         rb.linearVelocityX = kSpeed;
+    }
+    private void InvertUpdate()
+    {
+
     }
 
     private void DamageUpdate()
@@ -156,6 +169,11 @@ public class Player : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
+
+            if(state == PlayerState.Inverting)
+            {
+                state = PlayerState.Running;
+            }
         }
     }
 }
