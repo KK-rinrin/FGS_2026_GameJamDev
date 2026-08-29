@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d2f08e33e48fbff4fae1728f16e50811
+guid: 42f68fbef7ba2ab4a9099967a60532a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 393781772079734203
-    second: kari_table_0
+      213: -6695950386315148514
+    second: BG_0
+  - first:
+      213: -7917263021958980417
+    second: BG_1
+  - first:
+      213: 8964642436447761022
+    second: BG_2
+  - first:
+      213: 6519570804262606229
+    second: BG_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kari_table_0
+      name: BG_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 145
-        height: 108
+        y: 2297
+        width: 4093
+        height: 532
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbd16d37f6ef67500800000000000000
-      internalID: 393781772079734203
+      spriteID: e13cb0ea9943313a0800000000000000
+      internalID: -6695950386315148514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1646
+        width: 4093
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc9cce9a3b302290800000000000000
+      internalID: -7917263021958980417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1036
+        width: 4093
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e727cda9ccec86c70800000000000000
+      internalID: 8964642436447761022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 4093
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5959414ba1b2a7a50800000000000000
+      internalID: 6519570804262606229
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kari_table_0: 393781772079734203
+      BG_0: -6695950386315148514
+      BG_1: -7917263021958980417
+      BG_2: 8964642436447761022
+      BG_3: 6519570804262606229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

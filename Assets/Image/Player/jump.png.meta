@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e175905ec41c980429f1418ca1132478
+guid: 029fbb627c9a94847a6ed3fc9c26d22c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8194893618033047065
-    second: kari_light_0
+      213: 4281637774074219296
+    second: jump_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kari_light_0
+      name: jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 118
-        height: 355
+        x: 28
+        y: 496
+        width: 1524
+        height: 1453
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 916b9f2c35c1ab170800000000000000
-      internalID: 8194893618033047065
+      spriteID: 02b8694dede6b6b30800000000000000
+      internalID: 4281637774074219296
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kari_light_0: 8194893618033047065
+      jump_0: 4281637774074219296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

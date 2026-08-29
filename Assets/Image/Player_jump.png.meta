@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d579f2fe91477c74084af1a002858a89
+guid: ca335e18fc4436140b4d22b4bac60989
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6551531966030654064
-    second: kari_shikiri_0
+      213: 571713834404479814
+    second: Player_jump_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kari_shikiri_0
+      name: Player_jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 74
-        height: 401
+        x: 933
+        y: 456
+        width: 1523
+        height: 1453
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07aafd19c97bbea50800000000000000
-      internalID: 6551531966030654064
+      spriteID: 6430bdc04b22fe700800000000000000
+      internalID: 571713834404479814
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kari_shikiri_0: 6551531966030654064
+      Player_jump_0: 571713834404479814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
