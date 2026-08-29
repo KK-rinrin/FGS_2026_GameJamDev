@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    private Animator animator;
+
     private SpriteRenderer sprite;
     [Header("HP管理スクリプト")]
     [SerializeField] private PlayerHpScript playerHpScript;
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
 
         if (playerHpScript == null)
@@ -110,6 +113,8 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(0.0f, kJumpPower * Mathf.Sign(rb.gravityScale)));
 
             isJumping = true;
+
+            animator.Play("player_jump");
         }
 
         if (currentInvertTime > kInvertCoolTime && !isJumping)
@@ -130,7 +135,6 @@ public class Player : MonoBehaviour
     }
     private void InvertUpdate()
     {
-
     }
 
     private void DamageUpdate()
@@ -138,6 +142,8 @@ public class Player : MonoBehaviour
         timeCount += Time.deltaTime;
 
         rb.linearVelocityX = 0.0f;
+
+        rb.bodyType = RigidbodyType2D.Static;
 
         if (timeCount > kStunTime)
         {
@@ -148,6 +154,8 @@ public class Player : MonoBehaviour
                 int x = playerHpScript.HpMinus(1);
                 print(x);
             }
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            animator.Play("player_wait");
             state = PlayerState.Waiting;
         }
     }
@@ -160,6 +168,7 @@ public class Player : MonoBehaviour
 
         if(timeCount > kWaitTime)
         {
+            animator.Play("player_run");
             state = PlayerState.Running;
             currentInvertTime = kInvertCoolTime;
         }
@@ -181,12 +190,15 @@ public class Player : MonoBehaviour
             if(state != PlayerState.Damage)
             {
                 state = PlayerState.Damage;
+                animator.Play("player_damage");
                 timeCount = 0.0f;
             }
         }
 
         if(collision.gameObject.CompareTag("Ground"))
         {
+            animator.Play("player_run");
+
             isJumping = false;
 
             if(state == PlayerState.Inverting)
