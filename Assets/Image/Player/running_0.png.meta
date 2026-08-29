@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 714ed2c8987334847aad1b67807e6462
-=======
 guid: 3132e6538d7d48648b8b53d1b15d91b4
->>>>>>> upstream/main
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,8 +99,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -131,36 +125,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> upstream/main
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-      name: running_0_0
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 162
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9af782ad7394adc00800000000000000
-      internalID: 926133177610174377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-=======
->>>>>>> upstream/main
       name: running_0_1
       rect:
         serializedVersion: 2
@@ -169,11 +137,7 @@ TextureImporter:
         width: 1035
         height: 1827
       alignment: 0
-<<<<<<< HEAD
-      pivot: {x: 0, y: 0}
-=======
       pivot: {x: 0.5, y: 0.5}
->>>>>>> upstream/main
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,11 +154,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD
-    spriteID: 
-=======
     spriteID: f649b08d84071ac448ed47b66593c99d
->>>>>>> upstream/main
     internalID: 0
     vertices: []
     indices: 

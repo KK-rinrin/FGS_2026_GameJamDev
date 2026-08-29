@@ -1,10 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
-guid: b864d71fed4e142398b26d5d7bc33893
-=======
 guid: 2a3fb9f944021e548adf6ca412e04287
->>>>>>> upstream/main
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -13,20 +8,6 @@ TextureImporter:
   - first:
       213: 9180251791023625898
     second: 1_1
-<<<<<<< HEAD
-========
-guid: f2e609ba4101d0f46870d3e9b8e56f64
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 370836429328893637
-    second: damage_0
-  - first:
-      213: 4671811295830470272
-    second: damage_1
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
->>>>>>> upstream/main
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,8 +99,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-=======
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -133,15 +112,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> upstream/main
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
-=======
->>>>>>> upstream/main
       name: 1_0
       rect:
         serializedVersion: 2
@@ -149,18 +123,6 @@ TextureImporter:
         y: 335
         width: 1077
         height: 293
-<<<<<<< HEAD
-========
-      name: damage_0
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 175
-        width: 1406
-        height: 1659
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
->>>>>>> upstream/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,27 +131,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
       spriteID: 2d8b16a9dbe5124f0800000000000000
       internalID: -855298285791758126
-========
-      spriteID: 5c64ce784c9752500800000000000000
-      internalID: 370836429328893637
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
->>>>>>> upstream/main
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
-=======
->>>>>>> upstream/main
       name: 1_1
       rect:
         serializedVersion: 2
@@ -197,18 +145,6 @@ TextureImporter:
         y: 0
         width: 1080
         height: 290
-<<<<<<< HEAD
-========
-      name: damage_1
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 1810
-        width: 60
-        height: 48
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
->>>>>>> upstream/main
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,18 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
       spriteID: aa65b986d5ec66f70800000000000000
       internalID: 9180251791023625898
-========
-      spriteID: 08ee1a90f9b95d040800000000000000
-      internalID: 4671811295830470272
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
-      spriteID: aa65b986d5ec66f70800000000000000
-      internalID: 9180251791023625898
->>>>>>> upstream/main
       vertices: []
       indices: 
       edges: []
@@ -247,18 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/Obstacles/1.png.meta
       1_0: -855298285791758126
       1_1: 9180251791023625898
-========
-      damage_0: 370836429328893637
-      damage_1: 4671811295830470272
->>>>>>>> upstream/main:Assets/Image/Player/damage.png.meta
-=======
-      1_0: -855298285791758126
-      1_1: 9180251791023625898
->>>>>>> upstream/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
