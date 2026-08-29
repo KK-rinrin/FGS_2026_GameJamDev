@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,13 +9,24 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer sprite;
 
+    [Header("チェックポイント管理オブジェクト")]
+    [SerializeField] private CheckPointManager pointManager;
+
     [Header("重力を逆にすることができるクールタイム")]
     [SerializeField] private float kInvertCoolTime = 2.0f;
-
+    
     [Header("横移動速度")]
     [SerializeField] private float kSpeed = 2.0f;
+    
+    [Header("スタン時間")]
+    [SerializeField] private float kStunTime = 2.0f;
+    
+    [Header("リスポーン後待つ時間")]
+    [SerializeField] private float kWaitTime = 1.0f;
 
     private float currentInvertTime = 0f;
+
+    private float timeCount = 0f;
 
     private enum PlayerState
     {
@@ -22,13 +34,17 @@ public class Player : MonoBehaviour
         Running,        // 走っている状態
         TopRunning,     // 天井を走っている状態
         Inverting,      // 反転中
+        Jumping,        // ジャンプ中
         Damage,         // ダメージ中
+        Waiting,        // 止まっている状態
         Dead            // やられた時
     }
 
     private PlayerState state;
 
     private bool isOnTop = false;
+
+    private bool isJumping = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,10 +60,25 @@ public class Player : MonoBehaviour
     {
         switch(state)
         {
+            case PlayerState.None:
+                break;
             case PlayerState.Running:
                 RunningUpdate();
                 break;
+            case PlayerState.TopRunning:
+                RunningUpdate();
+                break;
             case PlayerState.Inverting:
+                break;
+            case PlayerState.Jumping:
+                break;
+            case PlayerState.Damage:
+                DamageUpdate();
+                break;
+            case PlayerState.Waiting:
+                WaitingUpdate();
+                break;
+            case PlayerState.Dead:
                 break;
         }
     }
@@ -55,6 +86,11 @@ public class Player : MonoBehaviour
     private void RunningUpdate()
     {
         currentInvertTime += Time.deltaTime;
+
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            rb.AddForce(new Vector2(0.0f, 700.0f));
+        }
 
         if (currentInvertTime > kInvertCoolTime)
         {
@@ -71,8 +107,55 @@ public class Player : MonoBehaviour
         rb.linearVelocityX = kSpeed;
     }
 
+    private void DamageUpdate()
+    {
+        timeCount += Time.deltaTime;
+
+        rb.linearVelocityX = 0.0f;
+
+        if (timeCount > kStunTime)
+        {
+            TurningBack();
+            state = PlayerState.Waiting;
+        }
+    }
+
+    private void WaitingUpdate()
+    {
+        timeCount += Time.deltaTime;
+
+        rb.linearVelocityX = 0.0f;
+
+        if(timeCount > kWaitTime)
+        {
+            state = PlayerState.Running;
+            currentInvertTime = kInvertCoolTime;
+        }
+    }
+
+    // 今後チェックポイントが実装されたらその地点からリスポーンするようにするかも
+    private void TurningBack()
+    {
+        Vector3 backPos = pointManager.GetCheckPoint().position;
+        backPos.y = transform.position.y;
+
+        transform.position = backPos;
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            if(state != PlayerState.Damage)
+            {
+                state = PlayerState.Damage;
+                timeCount = 0.0f;
+            }
+        }
+
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            isJumping = false;
+        }
     }
 }
