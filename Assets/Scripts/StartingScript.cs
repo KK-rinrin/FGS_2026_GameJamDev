@@ -46,7 +46,7 @@ public class StartingScript : SoundManagerScript
     {
         OnClickSE();
         starting_audiosource.Stop();
-        Initiate.Fade("TitleScene", Color.black, 1.0f);
+        Initiate.Fade("TestSceneKaminaga", Color.black, 1.0f);
     }
 
     public void OpenSettingBTN()

@@ -742,6 +742,10 @@ PrefabInstance:
       propertyPath: freezetime_icon_anim
       value: 
       objectReference: {fileID: 1926355679}
+    - target: {fileID: 7763193141848310299, guid: 753fc4f97e894af42b6b3f6c27575c9d, type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -840,7 +844,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 20, y: 0, z: 0}
+  TargetOffset: {x: 28, y: 0, z: 0}
   Damping: {x: 1, y: 1, z: 1}
   Lookahead:
     Enabled: 0
@@ -899,7 +903,7 @@ Transform:
   m_GameObject: {fileID: 508352568}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: -10}
+  m_LocalPosition: {x: 28, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
