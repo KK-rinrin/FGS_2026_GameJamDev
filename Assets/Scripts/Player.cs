@@ -19,6 +19,9 @@ public class Player : SoundManagerScript
     [Header("重力を逆にすることができるクールタイム")]
     [SerializeField] private float kInvertCoolTime = 2.0f;
     
+    [Header("重力を逆にしたときの落下速度")]
+    [SerializeField] private float kInvertSpeed = 15.0f;
+    
     [Header("横移動速度")]
     [SerializeField] private float kSpeed = 2.0f;
     
@@ -32,6 +35,10 @@ public class Player : SoundManagerScript
     [SerializeField] private float kJumpPower = 700.0f;
 
     private float currentInvertTime = 0f;
+
+    private float freeInvertTime = 10.0f;
+
+    private float freeInvertEndTime = 10.0f;
 
     private float timeCount = 0f;
 
@@ -119,8 +126,10 @@ public class Player : SoundManagerScript
             animator.Play("player_jump");
         }
 
-        if (currentInvertTime > kInvertCoolTime && !isJumping)
+        if (IsFreeInverse())
         {
+            freeInvertTime += Time.deltaTime;
+
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 OnReverseSE();
@@ -131,6 +140,25 @@ public class Player : SoundManagerScript
                 sprite.flipY = !sprite.flipY;
 
                 currentInvertTime = 0.0f;
+
+                animator.Play("player_jump");
+            }
+        }
+
+        if (currentInvertTime > kInvertCoolTime && !isJumping)
+        {
+            if (Keyboard.current.spaceKey.wasPressedThisFrame && !IsFreeInverse())
+            {
+                OnReverseSE();
+                state = PlayerState.Inverting;
+
+                rb.gravityScale *= -1.0f;
+
+                sprite.flipY = !sprite.flipY;
+
+                currentInvertTime = 0.0f;
+
+                animator.Play("player_jump");
             }
         }
 
@@ -138,6 +166,7 @@ public class Player : SoundManagerScript
     }
     private void InvertUpdate()
     {
+        rb.AddForce(new Vector2(0.0f, kInvertSpeed * -Mathf.Sign(rb.gravityScale)));
     }
 
     private void DamageUpdate()
@@ -188,6 +217,17 @@ public class Player : SoundManagerScript
     public void AddSpeed(float speed)
     {
         kSpeed += speed;
+    }
+
+    public void SetFreeInverse(float time)
+    {
+        freeInvertEndTime = time;
+        freeInvertTime = 0.0f;
+    }
+
+    public bool IsFreeInverse()
+    {
+        return freeInvertEndTime >= freeInvertTime;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
