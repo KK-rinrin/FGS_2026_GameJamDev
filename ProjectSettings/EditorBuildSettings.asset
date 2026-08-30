@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: 193de4697cabcbc42ae9a327dde3429c
   - enabled: 1
+    path: Assets/Scenes/Level/TestSceneKaminaga.unity
+    guid: 0973c6b1069bb924aa6a94d74507be5b
+  - enabled: 1
     path: Assets/Scenes/KaminagaScene.unity
     guid: d99de1209011ad44cbd8e9659b2cfa88
   - enabled: 1

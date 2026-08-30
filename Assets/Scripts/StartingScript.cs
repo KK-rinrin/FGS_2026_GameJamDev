@@ -26,7 +26,7 @@ public class StartingScript : SoundManagerScript
     {
         OnClickSE();
         starting_audiosource.Stop();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("KaminagaScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TestSceneKaminaga");
     }
 
     public void QuitGameBTN()
