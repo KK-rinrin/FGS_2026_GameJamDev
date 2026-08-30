@@ -16,7 +16,8 @@ public class ClearManager : MonoBehaviour
     {
         if(playerTransform.position.x >= this.transform.position.x)
         {
-            Initiate.Fade("ClearScene", Color.black, 1.0f);
+            NewMonoBehaviourScript.is_success = true;
+            Initiate.Fade("EndScene", Color.black, 1.0f);
         }
     }
 }
