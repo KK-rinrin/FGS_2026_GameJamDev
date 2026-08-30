@@ -8,6 +8,7 @@ public class Player : SoundManagerScript
 
     private Animator animator;
     [SerializeField] private AudioSource bgm_audiosource;
+    [SerializeField] private UnityEngine.UI.Image freezetime_icon_anim;
 
     private SpriteRenderer sprite;
     [Header("HP管理スクリプト")]
@@ -51,18 +52,19 @@ public class Player : SoundManagerScript
         Jumping,        // ジャンプ中
         Damage,         // ダメージ中
         Waiting,        // 止まっている状態
-        Dead            // やられた時
+        Dead,           // やられた時
+        Goal            // ゴール時
     }
 
     private PlayerState state;
-
-    private bool isOnTop = false;
 
     private bool isJumping = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        freezetime_icon_anim.type = UnityEngine.UI.Image.Type.Filled;
+        freezetime_icon_anim.fillAmount = 1.0f;
         PlayMainBgm(bgm_audiosource);
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -95,6 +97,13 @@ public class Player : SoundManagerScript
             case PlayerState.TopRunning:
                 RunningUpdate();
                 break;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        switch (state)
+        {
             case PlayerState.Inverting:
                 InvertUpdate();
                 break;
@@ -114,8 +123,13 @@ public class Player : SoundManagerScript
     private void RunningUpdate()
     {
         currentInvertTime += Time.deltaTime;
+    
+        if (currentInvertTime <= kInvertCoolTime && !IsFreeInverse())
+        {
+            freezetime_icon_anim.fillAmount = currentInvertTime / kInvertCoolTime;
+        }
 
-        if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
+        if (!isJumping && state != PlayerState.Inverting && Keyboard.current.zKey.wasPressedThisFrame)
         {
             OnJumpSE();
             // ジャンプの力を重力の符号によって向きを変えながら与える
@@ -151,6 +165,7 @@ public class Player : SoundManagerScript
             {
                 OnReverseSE();
                 state = PlayerState.Inverting;
+                freezetime_icon_anim.fillAmount = 0.0f;
 
                 rb.gravityScale *= -1.0f;
 
@@ -230,6 +245,12 @@ public class Player : SoundManagerScript
         return freeInvertEndTime >= freeInvertTime;
     }
 
+    public void SetGoal()
+    {
+        state = PlayerState.Goal;
+        animator.Play("player_wait");
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))
@@ -239,6 +260,7 @@ public class Player : SoundManagerScript
                 OnCollisionSE();
                 state = PlayerState.Damage;
                 animator.Play("player_damage");
+                freezetime_icon_anim.fillAmount = 1.0f;
                 timeCount = 0.0f;
             }
         }

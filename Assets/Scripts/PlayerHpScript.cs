@@ -36,7 +36,6 @@ public class PlayerHpScript : MonoBehaviour
 
     public int HpMinus(int damage)
     {
-        print("damage : " + damage + " ** totatl_hp : " + total_hp);
         if (heart_list == null || heart_list.Count == 0)
         {
             Debug.LogError("heart_list is null or empty");
@@ -59,12 +58,13 @@ public class PlayerHpScript : MonoBehaviour
                 return -1;
             }
 
-            print("len : " + heart_list.Count + " ** playerhp : " + player_hp);
             heart_list[player_hp - 1].GetComponent<UnityEngine.UI.Image>().enabled = false;
             player_hp--;
         }
         if (player_hp <= 0){
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
+            EndingImageScript.is_success = false;
+            Initiate.Fade("EndScene", Color.black, 1.0f);
+            //UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
         return player_hp;
     }

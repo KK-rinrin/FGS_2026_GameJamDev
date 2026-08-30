@@ -8,6 +8,7 @@ public class StartingScript : SoundManagerScript
 {
     [SerializeField] private AudioSource starting_audiosource;
     [SerializeField] private Slider audio_volume_slider;
+    [SerializeField] private Slider master_volume_slider;
     [SerializeField] private Canvas setting_panel;
     [SerializeField] private Button se_onoff_btn;
     [SerializeField] private TMP_Text se_onoff_btn_text;
@@ -26,7 +27,8 @@ public class StartingScript : SoundManagerScript
     {
         OnClickSE();
         starting_audiosource.Stop();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("KaminagaScene");
+        //Initiate.Fade("KaminagaScene", Color.black, 1.0f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("TestSceneKaminaga");
     }
 
     public void QuitGameBTN()
@@ -44,7 +46,7 @@ public class StartingScript : SoundManagerScript
     {
         OnClickSE();
         starting_audiosource.Stop();
-        Initiate.Fade("TitleScene", Color.black, 1.0f);
+        Initiate.Fade("TestSceneKaminaga", Color.black, 1.0f);
     }
 
     public void OpenSettingBTN()
@@ -63,21 +65,22 @@ public class StartingScript : SoundManagerScript
 
     public void SeOnoffBTN()
     {
-        if (has_se)
+        if (se_amplification > 0.0f)
         {
-            has_se = false;
+            se_amplification = 0.0f;
             se_onoff_btn_text.text = "OFF";
         }
         else
         {
-            has_se = true;
+            se_amplification = 5.0f;
             se_onoff_btn_text.text = "ON";
         }
     }
 
     public void AudioVolumeSLIDER()
     {
-        starting_audiosource.volume = audio_volume_slider.value;
-        bgm_volume = audio_volume_slider.value;
+        starting_audiosource.volume = audio_volume_slider.value * master_volume_slider.value;
+        bgm_volume = audio_volume_slider.value * master_volume_slider.value;
+        master_volume = master_volume_slider.value;
     }
 }

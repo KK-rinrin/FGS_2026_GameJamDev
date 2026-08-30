@@ -14,8 +14,9 @@ public class SoundManagerScript : MonoBehaviour
     [SerializeField] private AudioClip reverse_se;
     [SerializeField] private AudioClip collision_se;
     [SerializeField] private AudioClip click_se;
-    public static bool has_se = true;
-    public static float bgm_volume = 1.0f;
+    protected static float se_amplification = 5.0f;
+    protected static float bgm_volume = 1.0f;
+    protected static float master_volume = 1.0f;
 
     void Update()
     {
@@ -42,25 +43,21 @@ public class SoundManagerScript : MonoBehaviour
 
     public void OnJumpSE()
     {
-        if (!has_se) {return;}
-        se_audiosource.PlayOneShot(jump_se, 5.0f);
+        se_audiosource.PlayOneShot(jump_se, se_amplification * master_volume);
     }
 
     public void OnReverseSE()
     {
-        if (!has_se) {return;}
-        se_audiosource.PlayOneShot(reverse_se, 5.0f);
+        se_audiosource.PlayOneShot(reverse_se, se_amplification * master_volume);
     }
 
     public void OnCollisionSE()
     {
-        if (!has_se) {return;}
-        se_audiosource.PlayOneShot(collision_se, 5.0f);
+        se_audiosource.PlayOneShot(collision_se, se_amplification * master_volume);
     }
 
     public void OnClickSE()
     {
-        if (!has_se) {return;}
-        se_audiosource.PlayOneShot(click_se, 5.0f);
+        se_audiosource.PlayOneShot(click_se, se_amplification * master_volume);
     }
 }
