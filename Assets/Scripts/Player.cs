@@ -33,6 +33,10 @@ public class Player : SoundManagerScript
 
     private float currentInvertTime = 0f;
 
+    private float freeInvertTime = 10.0f;
+
+    private float freeInvertEndTime = 10.0f;
+
     private float timeCount = 0f;
 
     private enum PlayerState
@@ -119,8 +123,10 @@ public class Player : SoundManagerScript
             animator.Play("player_jump");
         }
 
-        if (currentInvertTime > kInvertCoolTime && !isJumping)
+        if (IsFreeInverse())
         {
+            freeInvertTime += Time.deltaTime;
+
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 OnReverseSE();
@@ -131,6 +137,25 @@ public class Player : SoundManagerScript
                 sprite.flipY = !sprite.flipY;
 
                 currentInvertTime = 0.0f;
+
+                animator.Play("player_jump");
+            }
+        }
+
+        if (currentInvertTime > kInvertCoolTime && !isJumping)
+        {
+            if (Keyboard.current.spaceKey.wasPressedThisFrame && !IsFreeInverse())
+            {
+                OnReverseSE();
+                state = PlayerState.Inverting;
+
+                rb.gravityScale *= -1.0f;
+
+                sprite.flipY = !sprite.flipY;
+
+                currentInvertTime = 0.0f;
+
+                animator.Play("player_jump");
             }
         }
 
@@ -188,6 +213,17 @@ public class Player : SoundManagerScript
     public void AddSpeed(float speed)
     {
         kSpeed += speed;
+    }
+
+    public void SetFreeInverse(float time)
+    {
+        freeInvertEndTime = time;
+        freeInvertTime = 0.0f;
+    }
+
+    public bool IsFreeInverse()
+    {
+        return freeInvertEndTime >= freeInvertTime;
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
