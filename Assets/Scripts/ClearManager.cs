@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClearManager : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class ClearManager : MonoBehaviour
 
         player.SetGoal();
         EndingImageScript.is_success = true;
-        Initiate.Fade("EndScene", Color.black, 1.0f);
+        //Initiate.Fade("EndScene", Color.black, 1.0f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
     }
 }
