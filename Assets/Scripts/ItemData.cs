@@ -26,7 +26,7 @@ public class ItemData : ScriptableObject
                 composer.cameraController.Inverse();
                 break;
             case ItemType.FreePlayerInverse:
-                //value = 1f;
+                composer.player.SetFreeInverse(value);
                 break;
 
         }
