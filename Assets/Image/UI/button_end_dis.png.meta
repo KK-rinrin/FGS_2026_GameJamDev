@@ -1,35 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
 guid: 6727a32c745c2475f9130d9921fd2f0c
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9138666738275453366
-    second: button_end_dis_0
-========
-guid: f30cb4ea9c1c8434ab4184ab9fcf7beb
-=======
-<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
-guid: 514d392ab2ef94017843722d25bb5319
->>>>>>> upstream/main
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4531127856655987640
-    second: button_start_0
-<<<<<<< HEAD
->>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
-=======
-========
-guid: 6068337cba0926c4086cc7060b3a247c
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -9138666738275453366
-    second: button_end_dis_0
->>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
->>>>>>> upstream/main
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -91,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,19 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
       name: button_end_dis_0
-========
-      name: button_start_0
->>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
-=======
-<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
-      name: button_start_0
-========
-      name: button_end_dis_0
->>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
->>>>>>> upstream/main
       rect:
         serializedVersion: 2
         x: 5
@@ -171,30 +131,15 @@ TextureImporter:
         width: 289
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
-      spriteID: a46f960350fec2180800000000000000
-      internalID: -9138666738275453366
-========
-      spriteID: 8b37bd757ccc1ee30800000000000000
-      internalID: 4531127856655987640
->>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
-=======
-<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
-      spriteID: 8b37bd757ccc1ee30800000000000000
-      internalID: 4531127856655987640
-========
-      spriteID: a46f960350fec2180800000000000000
-      internalID: -9138666738275453366
->>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
->>>>>>> upstream/main
+      spriteID: a2c6201ecb574b746ad7af1f51bf9aa2
+      internalID: 85336885
       vertices: []
       indices: 
       edges: []
@@ -203,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 444b862fc08a1864bbcf65f3509e357e
     internalID: 0
     vertices: []
     indices: 
@@ -213,19 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
-      button_end_dis_0: -9138666738275453366
-========
-      button_start_0: 4531127856655987640
->>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
-=======
-<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
-      button_start_0: 4531127856655987640
-========
-      button_end_dis_0: -9138666738275453366
->>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
->>>>>>> upstream/main
+      button_end_dis_0: 85336885
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

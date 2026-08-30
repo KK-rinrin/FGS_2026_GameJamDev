@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 525bd9b05ab6b41438b6db576819cb8c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -193,7 +193,7 @@ SpriteRenderer:
   m_Size: {x: 28.949173, y: 18.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &103424862
 Transform:
@@ -1434,10 +1434,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 296980515457628551, guid: a79d24c9d617b46ee8c8b2579097df7f, type: 3}
-    m_PressedSprite: {fileID: -9138666738275453366, guid: 6727a32c745c2475f9130d9921fd2f0c, type: 3}
+    m_HighlightedSprite: {fileID: -1005892492, guid: a79d24c9d617b46ee8c8b2579097df7f, type: 3}
+    m_PressedSprite: {fileID: 85336885, guid: 6727a32c745c2475f9130d9921fd2f0c, type: 3}
     m_SelectedSprite: {fileID: -9138666738275453366, guid: 6727a32c745c2475f9130d9921fd2f0c, type: 3}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 85336885, guid: 6727a32c745c2475f9130d9921fd2f0c, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2444891646610626039, guid: a68bfd65d81b243e9855c33d48cccf81, type: 3}
+  m_Sprite: {fileID: 732599639, guid: a68bfd65d81b243e9855c33d48cccf81, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
