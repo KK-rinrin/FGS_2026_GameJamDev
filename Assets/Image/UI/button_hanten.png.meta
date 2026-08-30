@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39ad1c17e077e4a7583eb3f8cc93c001
+guid: c5833b84cc4dc344f94173f6456ae3bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2043786837526407466
-    second: title_start_dis_0
+      213: -760828863312144781
+    second: button_hanten_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: title_start_dis_0
+      name: button_hanten_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 8
-        width: 289
-        height: 85
+        x: 9
+        y: 9
+        width: 131
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d69e9023b203a3e0800000000000000
-      internalID: -2043786837526407466
+      spriteID: 3765a6b0e2ef075f0800000000000000
+      internalID: -760828863312144781
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      title_start_dis_0: -2043786837526407466
+      button_hanten_0: -760828863312144781
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
