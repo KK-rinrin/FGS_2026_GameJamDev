@@ -125,10 +125,11 @@ public class Player : SoundManagerScript
     private void RunningUpdate()
     {
         currentInvertTime += Time.deltaTime;
-
+    
         if (currentInvertTime <= kInvertCoolTime && !IsFreeInverse())
         {
-            freezetime_icon_anim.fillAmount = currentInvertTime / kInvertSpeed;
+            print(currentInvertTime);
+            freezetime_icon_anim.fillAmount = currentInvertTime / kInvertCoolTime;
         }
 
         if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
@@ -150,7 +151,6 @@ public class Player : SoundManagerScript
             {
                 OnReverseSE();
                 state = PlayerState.Inverting;
-                freezetime_icon_anim.fillAmount = 0.0f;
 
                 rb.gravityScale *= -1.0f;
 
@@ -257,6 +257,7 @@ public class Player : SoundManagerScript
                 OnCollisionSE();
                 state = PlayerState.Damage;
                 animator.Play("player_damage");
+                freezetime_icon_anim.fillAmount = 1.0f;
                 timeCount = 0.0f;
             }
         }
