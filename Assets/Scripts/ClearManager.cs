@@ -17,7 +17,7 @@ public class ClearManager : MonoBehaviour
         if(player.transform.position.x >= this.transform.position.x)
         {
             player.SetGoal();
-            NewMonoBehaviourScript.is_success = true;
+            EndingImageScript.is_success = true;
             Initiate.Fade("EndScene", Color.black, 1.0f);
         }
     }
