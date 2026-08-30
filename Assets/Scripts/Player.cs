@@ -122,7 +122,7 @@ public class Player : SoundManagerScript
     {
         currentInvertTime += Time.deltaTime;
 
-        if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
+        if (!isJumping && state != PlayerState.Inverting && Keyboard.current.zKey.wasPressedThisFrame)
         {
             OnJumpSE();
             // ƒWƒƒƒ“ƒv‚Ì—Í‚ğd—Í‚Ì•„†‚É‚æ‚Á‚ÄŒü‚«‚ğ•Ï‚¦‚È‚ª‚ç—^‚¦‚é
