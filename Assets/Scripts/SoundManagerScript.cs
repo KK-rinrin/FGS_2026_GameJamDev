@@ -14,9 +14,9 @@ public class SoundManagerScript : MonoBehaviour
     [SerializeField] private AudioClip reverse_se;
     [SerializeField] private AudioClip collision_se;
     [SerializeField] private AudioClip click_se;
-    public static float se_amplification = 5.0f;
-    public static float bgm_volume = 1.0f;
-    public static float master_volume = 1.0f;
+    protected static float se_amplification = 5.0f;
+    protected static float bgm_volume = 1.0f;
+    protected static float master_volume = 1.0f;
 
     void Update()
     {

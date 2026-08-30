@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 4e34e954356cbc04f8f1e67ab73432a0
+guid: 42825b5ab8420ad43802daeae8eb2464
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2090963574632006145
-    second: button_hanten_muteki_0
+      213: 634884581855037987
+    second: items_kari_0
+  - first:
+      213: 2529168828537378536
+    second: items_kari_1
+  - first:
+      213: 1509278263728823640
+    second: items_kari_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_hanten_muteki_0
+      name: items_kari_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 131
-        height: 132
+        x: 924
+        y: 2901
+        width: 969
+        height: 968
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 102c830fa48940d10800000000000000
-      internalID: 2090963574632006145
+      spriteID: 32a87d6d9209fc800800000000000000
+      internalID: 634884581855037987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_kari_1
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1536
+        width: 969
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e616f146a9691320800000000000000
+      internalID: 2529168828537378536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: items_kari_2
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 234
+        width: 969
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d56c8959802f410800000000000000
+      internalID: 1509278263728823640
       vertices: []
       indices: 
       edges: []
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_hanten_muteki_0: 2090963574632006145
+      items_kari_0: 634884581855037987
+      items_kari_1: 2529168828537378536
+      items_kari_2: 1509278263728823640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

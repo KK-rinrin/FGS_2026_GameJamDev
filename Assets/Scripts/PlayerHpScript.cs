@@ -64,6 +64,7 @@ public class PlayerHpScript : MonoBehaviour
             player_hp--;
         }
         if (player_hp <= 0){
+            EndingImageScript.is_success = false;
             UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
         return player_hp;
