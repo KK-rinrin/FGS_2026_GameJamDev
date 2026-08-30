@@ -58,8 +58,6 @@ public class Player : SoundManagerScript
 
     private PlayerState state;
 
-    private bool isOnTop = false;
-
     private bool isJumping = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
