@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 39ad1c17e077e4a7583eb3f8cc93c001
+guid: 9839bd54dca5b4fd18b0592e694f5422
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2043786837526407466
-    second: title_start_dis_0
+      213: 4994204230546240132
+    second: gameover_letter_0
+  - first:
+      213: 3968005313594949268
+    second: gameover_letter_1
+  - first:
+      213: 5332701588777878581
+    second: gameover_letter_2
+  - first:
+      213: -482646918050811415
+    second: gameover_letter_3
+  - first:
+      213: 1190592536799526471
+    second: gameover_letter_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: title_start_dis_0
+      name: gameover_letter_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 8
-        width: 289
-        height: 85
+        x: 34
+        y: 54
+        width: 711
+        height: 735
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d69e9023b203a3e0800000000000000
-      internalID: -2043786837526407466
+      spriteID: 4823679894afe4540800000000000000
+      internalID: 4994204230546240132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameover_letter_1
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 93
+        width: 798
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e70bf2fcf211730800000000000000
+      internalID: 3968005313594949268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameover_letter_2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 220
+        width: 145
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534444457df810a40800000000000000
+      internalID: 5332701588777878581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameover_letter_3
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 238
+        width: 145
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1f4a96f2b4d49f0800000000000000
+      internalID: -482646918050811415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gameover_letter_4
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 255
+        width: 145
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eba2caa95d58010800000000000000
+      internalID: 1190592536799526471
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      title_start_dis_0: -2043786837526407466
+      gameover_letter_0: 4994204230546240132
+      gameover_letter_1: 3968005313594949268
+      gameover_letter_2: 5332701588777878581
+      gameover_letter_3: -482646918050811415
+      gameover_letter_4: 1190592536799526471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
