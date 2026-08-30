@@ -53,7 +53,8 @@ public class Player : SoundManagerScript
         Jumping,        // ジャンプ中
         Damage,         // ダメージ中
         Waiting,        // 止まっている状態
-        Dead            // やられた時
+        Dead,           // やられた時
+        Goal            // ゴール時
     }
 
     private PlayerState state;
@@ -245,6 +246,12 @@ public class Player : SoundManagerScript
     public bool IsFreeInverse()
     {
         return freeInvertEndTime >= freeInvertTime;
+    }
+
+    public void SetGoal()
+    {
+        state = PlayerState.Goal;
+        animator.Play("player_wait");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

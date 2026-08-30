@@ -3,7 +3,7 @@ using UnityEngine;
 public class ClearManager : MonoBehaviour
 {
 
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private Player player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,8 +14,9 @@ public class ClearManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(playerTransform.position.x >= this.transform.position.x)
+        if(player.transform.position.x >= this.transform.position.x)
         {
+            player.SetGoal();
             EndingImageScript.is_success = true;
             Initiate.Fade("EndScene", Color.black, 1.0f);
         }
