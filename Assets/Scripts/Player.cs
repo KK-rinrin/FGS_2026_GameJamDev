@@ -19,6 +19,9 @@ public class Player : SoundManagerScript
     [Header("重力を逆にすることができるクールタイム")]
     [SerializeField] private float kInvertCoolTime = 2.0f;
     
+    [Header("重力を逆にしたときの落下速度")]
+    [SerializeField] private float kInvertSpeed = 15.0f;
+    
     [Header("横移動速度")]
     [SerializeField] private float kSpeed = 2.0f;
     
@@ -163,6 +166,7 @@ public class Player : SoundManagerScript
     }
     private void InvertUpdate()
     {
+        rb.AddForce(new Vector2(0.0f, kInvertSpeed * -Mathf.Sign(rb.gravityScale)));
     }
 
     private void DamageUpdate()
