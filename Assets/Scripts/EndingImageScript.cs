@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class EndingImageScript : MonoBehaviour
 {
     [SerializeField] private Sprite success_sprite;
     [SerializeField] private Sprite failed_sprite;
