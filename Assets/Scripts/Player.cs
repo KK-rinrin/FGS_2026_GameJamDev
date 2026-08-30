@@ -95,6 +95,13 @@ public class Player : SoundManagerScript
             case PlayerState.TopRunning:
                 RunningUpdate();
                 break;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        switch (state)
+        {
             case PlayerState.Inverting:
                 InvertUpdate();
                 break;
