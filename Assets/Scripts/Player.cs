@@ -185,6 +185,11 @@ public class Player : SoundManagerScript
         transform.position = backPos;
     }
 
+    public void AddSpeed(float speed)
+    {
+        kSpeed += speed;
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))
