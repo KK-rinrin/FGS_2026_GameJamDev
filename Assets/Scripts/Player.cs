@@ -1,13 +1,13 @@
-using System.Runtime.InteropServices;
-using System.Threading;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public class Player : SoundManagerScript
 {
     private Rigidbody2D rb;
 
     private Animator animator;
+    [SerializeField] private AudioSource bgm_audiosource;
 
     private SpriteRenderer sprite;
     [Header("HP管理スクリプト")]
@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PlayMainBgm(bgm_audiosource);
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
@@ -109,6 +110,7 @@ public class Player : MonoBehaviour
 
         if (!isJumping && state != PlayerState.Inverting && Keyboard.current.pKey.wasPressedThisFrame)
         {
+            OnJumpSE();
             // ジャンプの力を重力の符号によって向きを変えながら与える
             rb.AddForce(new Vector2(0.0f, kJumpPower * Mathf.Sign(rb.gravityScale)));
 
@@ -121,6 +123,7 @@ public class Player : MonoBehaviour
         {
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
+                OnReverseSE();
                 state = PlayerState.Inverting;
 
                 rb.gravityScale *= -1.0f;
@@ -148,7 +151,6 @@ public class Player : MonoBehaviour
         if (timeCount > kStunTime)
         {
             TurningBack();
-            print("*****");
             if (playerHpScript != null)
             {
                 int x = playerHpScript.HpMinus(1);
@@ -189,6 +191,7 @@ public class Player : MonoBehaviour
         {
             if(state != PlayerState.Damage)
             {
+                OnCollisionSE();
                 state = PlayerState.Damage;
                 animator.Play("player_damage");
                 timeCount = 0.0f;

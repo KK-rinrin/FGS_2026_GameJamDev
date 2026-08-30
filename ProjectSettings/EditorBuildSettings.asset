@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/KaminagaScene.unity
     guid: d99de1209011ad44cbd8e9659b2cfa88
   - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
+    path: Assets/Scenes/EndScene.unity
     guid: 1ea592fa333484614ab227f04253a97a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
