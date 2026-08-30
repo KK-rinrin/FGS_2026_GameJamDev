@@ -1,5 +1,4 @@
 
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -58,8 +57,6 @@ public class Player : SoundManagerScript
     }
 
     private PlayerState state;
-
-    private bool isOnTop = false;
 
     private bool isJumping = false;
 

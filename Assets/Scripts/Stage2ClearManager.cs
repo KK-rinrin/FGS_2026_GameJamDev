@@ -1,9 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class ClearManager : MonoBehaviour
+public class Stage2ClearManager : MonoBehaviour
 {
-
     [SerializeField] private Player player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,7 +26,7 @@ public class ClearManager : MonoBehaviour
 
         player.SetGoal();
         EndingImageScript.is_success = true;
-        Initiate.Fade("TestSceneKaminaga2", Color.black, 1.0f);
+        Initiate.Fade("EndScene", Color.black, 1.0f);
         //UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
     }
 }
