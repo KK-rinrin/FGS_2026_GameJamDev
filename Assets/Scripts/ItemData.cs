@@ -3,7 +3,8 @@ using UnityEngine;
 public enum ItemType
 {
     SpeedUp,
-    SpeedDown,
+    CameraInverse,
+    FreePlayerInverse
 }
 
 [CreateAssetMenu(fileName = "ItemDataBase", menuName = "CreateItemData")]
@@ -22,7 +23,10 @@ public class ItemData : ScriptableObject
                 //composer.player.
                 Debug.Log("speed up");
                 break;
-            case ItemType.SpeedDown:
+            case ItemType.CameraInverse:
+                composer.cameraController.Inverse();
+                break;
+            case ItemType.FreePlayerInverse:
                 //value = 1f;
                 break;
 
