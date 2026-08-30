@@ -11,15 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: 193de4697cabcbc42ae9a327dde3429c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/KaminagaScene_OLD.unity
     guid: d99de1209011ad44cbd8e9659b2cfa88
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 1ea592fa333484614ab227f04253a97a
   - enabled: 1
-    path: Assets/Scenes/KaminagaScene.unity
+    path: Assets/Scenes/PREV_KaminagaScene.unity
     guid: 2c11c0625b39b4bada9e524623cac690
+  - enabled: 1
+    path: Assets/Scenes/KaminagaScene.unity
+    guid: fc08c6dc367324ae2b6e81c7426dc35c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

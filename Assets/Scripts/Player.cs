@@ -128,7 +128,6 @@ public class Player : SoundManagerScript
     
         if (currentInvertTime <= kInvertCoolTime && !IsFreeInverse())
         {
-            print(currentInvertTime);
             freezetime_icon_anim.fillAmount = currentInvertTime / kInvertCoolTime;
         }
 

@@ -63,7 +63,8 @@ public class PlayerHpScript : MonoBehaviour
         }
         if (player_hp <= 0){
             EndingImageScript.is_success = false;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
+            Initiate.Fade("EndScene", Color.black, 1.0f);
+            //UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
         return player_hp;
     }
