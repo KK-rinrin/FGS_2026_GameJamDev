@@ -12,8 +12,6 @@ public class CheckPointManager : MonoBehaviour
 
     private int currentCheckPointIndex = 0;
 
-    public GameObject currentoCheckPointObj;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,11 +27,8 @@ public class CheckPointManager : MonoBehaviour
             if(currentCheckPointIndex < checkPoints.Count - 1)
             {
                 currentCheckPointIndex++;
-                Debug.Log("現在のチェックポイントは" + (currentCheckPointIndex - 1) + "です");
             }
         }
-
-        currentoCheckPointObj.transform.position = checkPoints[currentCheckPointIndex - 1].position;
     }
 
     public Transform GetCheckPoint()
