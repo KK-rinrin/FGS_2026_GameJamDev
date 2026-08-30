@@ -2662,14 +2662,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ee3b01abc6c2645b9bab0521676e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  se_audiosource: {fileID: 0}
-  main_bgm: {fileID: 0}
-  starting_bgm: {fileID: 0}
-  jump_se: {fileID: 0}
-  reverse_se: {fileID: 0}
-  collision_se: {fileID: 0}
-  click_se: {fileID: 0}
-  bgm_audiosource: {fileID: 0}
+  se_audiosource: {fileID: 1554818461}
+  main_bgm: {fileID: 8300000, guid: b4413bc9b977c20448a0e452c16829d5, type: 3}
+  starting_bgm: {fileID: 8300000, guid: 01e8b4f815951544aa4036946fb88944, type: 3}
+  jump_se: {fileID: 8300000, guid: 3243df62e23fe7141b19a4d2dbcda220, type: 3}
+  reverse_se: {fileID: 8300000, guid: d975a3ea006edea419c9d3a7c6273203, type: 3}
+  collision_se: {fileID: 8300000, guid: 44ad3d63f642b9d42b38be277bcd4506, type: 3}
+  click_se: {fileID: 8300000, guid: 5656d49dc3d8c604e993d5bac7fab9fa, type: 3}
+  bgm_audiosource: {fileID: 1616567275}
   playerHpScript: {fileID: 506180701}
   pointManager: {fileID: 596305472}
   kInvertCoolTime: 2

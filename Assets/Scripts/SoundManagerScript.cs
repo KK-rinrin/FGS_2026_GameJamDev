@@ -14,6 +14,8 @@ public class SoundManagerScript : MonoBehaviour
     [SerializeField] private AudioClip reverse_se;
     [SerializeField] private AudioClip collision_se;
     [SerializeField] private AudioClip click_se;
+    public static bool has_se = true;
+    public static float bgm_volume = 1.0f;
 
     void Update()
     {
@@ -27,38 +29,38 @@ public class SoundManagerScript : MonoBehaviour
     public void PlayStartingBgm(AudioSource bgm_audiosource)
     {
         bgm_audiosource.clip = starting_bgm;
+        bgm_audiosource.volume = bgm_volume;
         bgm_audiosource.Play();
     }
 
     public void PlayMainBgm(AudioSource bgm_audiosource)
     {
         bgm_audiosource.clip = main_bgm;
+        bgm_audiosource.volume = bgm_volume;
         bgm_audiosource.Play();
     }
 
     public void OnJumpSE()
     {
+        if (!has_se) {return;}
         se_audiosource.PlayOneShot(jump_se, 5.0f);
     }
 
     public void OnReverseSE()
     {
+        if (!has_se) {return;}
         se_audiosource.PlayOneShot(reverse_se, 5.0f);
     }
 
     public void OnCollisionSE()
     {
+        if (!has_se) {return;}
         se_audiosource.PlayOneShot(collision_se, 5.0f);
     }
 
     public void OnClickSE()
     {
-        //se_audiosource.PlayOneShot(click_se, 5.0f);
-        StartCoroutine(WaitForSe(1.0f));
-    }
-
-    IEnumerator WaitForSe(float wait_time){
+        if (!has_se) {return;}
         se_audiosource.PlayOneShot(click_se, 5.0f);
-        yield return new WaitForSeconds(wait_time);
     }
 }

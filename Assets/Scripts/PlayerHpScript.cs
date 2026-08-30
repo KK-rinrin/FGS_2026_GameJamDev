@@ -18,7 +18,6 @@ public class PlayerHpScript : MonoBehaviour
 
     void Start()
     {
-        print("+++++");
     }
 
     void Update()
@@ -65,7 +64,7 @@ public class PlayerHpScript : MonoBehaviour
             player_hp--;
         }
         if (player_hp <= 0){
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("EndScene");
         }
         return player_hp;
     }
