@@ -1,10 +1,35 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
 guid: 6727a32c745c2475f9130d9921fd2f0c
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -9138666738275453366
     second: button_end_dis_0
+========
+guid: f30cb4ea9c1c8434ab4184ab9fcf7beb
+=======
+<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
+guid: 514d392ab2ef94017843722d25bb5319
+>>>>>>> upstream/main
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4531127856655987640
+    second: button_start_0
+<<<<<<< HEAD
+>>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
+=======
+========
+guid: 6068337cba0926c4086cc7060b3a247c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9138666738275453366
+    second: button_end_dis_0
+>>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
+>>>>>>> upstream/main
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +121,49 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
       name: button_end_dis_0
+========
+      name: button_start_0
+>>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
+=======
+<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
+      name: button_start_0
+========
+      name: button_end_dis_0
+>>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
+>>>>>>> upstream/main
       rect:
         serializedVersion: 2
         x: 5
@@ -115,8 +178,23 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
       spriteID: a46f960350fec2180800000000000000
       internalID: -9138666738275453366
+========
+      spriteID: 8b37bd757ccc1ee30800000000000000
+      internalID: 4531127856655987640
+>>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
+=======
+<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
+      spriteID: 8b37bd757ccc1ee30800000000000000
+      internalID: 4531127856655987640
+========
+      spriteID: a46f960350fec2180800000000000000
+      internalID: -9138666738275453366
+>>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
+>>>>>>> upstream/main
       vertices: []
       indices: 
       edges: []
@@ -135,7 +213,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/Image/UI/button_end_dis.png.meta
       button_end_dis_0: -9138666738275453366
+========
+      button_start_0: 4531127856655987640
+>>>>>>>> upstream/main:Assets/Image/UI/button_start.png.meta
+=======
+<<<<<<<< HEAD:Assets/Image/UI/button_start.png.meta
+      button_start_0: 4531127856655987640
+========
+      button_end_dis_0: -9138666738275453366
+>>>>>>>> upstream/main:Assets/Image/UI/button_end_dis.png.meta
+>>>>>>> upstream/main
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
