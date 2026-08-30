@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: SpeedUp
   type: 0
-  value: 1
+  value: 10

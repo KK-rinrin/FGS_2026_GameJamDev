@@ -20,8 +20,7 @@ public class ItemData : ScriptableObject
         {
             case ItemType.SpeedUp:
                 // ここでプレイヤーのスピードアップ用関数を呼ぶなどをしていく
-                //composer.player.
-                Debug.Log("speed up");
+                composer.player.AddSpeed(value);
                 break;
             case ItemType.CameraInverse:
                 composer.cameraController.Inverse();
