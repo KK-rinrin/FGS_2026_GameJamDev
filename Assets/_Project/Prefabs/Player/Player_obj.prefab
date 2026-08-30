@@ -140,10 +140,11 @@ MonoBehaviour:
   playerHpScript: {fileID: 0}
   pointManager: {fileID: 0}
   kInvertCoolTime: 2
+  kInvertSpeed: 400
   kSpeed: 40
   kStunTime: 1
   kWaitTime: 2
-  kJumpPower: 2100
+  kJumpPower: 2500
 --- !u!50 &7963915350649346876
 Rigidbody2D:
   serializedVersion: 5
