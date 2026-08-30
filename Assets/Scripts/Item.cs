@@ -16,12 +16,20 @@ public class Item : MonoBehaviour
 
         if (getPlayer == null)
         {
+            Debug.LogWarning("アイテムがプレイヤーを取得できませんでした");
             return;
         }
 
         // もしカメラ関連の処理を行う場合はシーンからFindObjectWithTypeしないといけないかも
+        CameraController getCameraController = FindFirstObjectByType<CameraController>();
 
-        ItemComposer composer = new ItemComposer { player = getPlayer };
+        if (getCameraController == null)
+        {
+            Debug.LogWarning("アイテムがカメラコントローラーを取得できませんでした");
+            return;
+        }
+
+        ItemComposer composer = new ItemComposer { player = getPlayer, cameraController = getCameraController };
 
         itemData.Apply(composer);
 
