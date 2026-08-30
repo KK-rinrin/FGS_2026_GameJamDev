@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a79d24c9d617b46ee8c8b2579097df7f
+guid: 8c863d07b928a4e5fb55642d9d3d18c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 296980515457628551
-    second: button_end_h_0
+      213: 2090963574632006145
+    second: button_hanten_muteki_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_end_h_0
+      name: button_hanten_muteki_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 8
-        width: 289
-        height: 85
+        x: 9
+        y: 9
+        width: 131
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 789701194361f1400800000000000000
-      internalID: 296980515457628551
+      spriteID: 102c830fa48940d10800000000000000
+      internalID: 2090963574632006145
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_end_h_0: 296980515457628551
+      button_hanten_muteki_0: 2090963574632006145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,12 +5,6 @@ TextureImporter:
   - first:
       213: 8601295146896742308
     second: button_menu_0
-  - first:
-      213: 4519749203093297115
-    second: button_menu_1
-  - first:
-      213: -2164938869708571256
-    second: button_menu_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -122,10 +103,10 @@ TextureImporter:
       name: button_menu_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 42
-        width: 67
-        height: 10
+        x: 0
+        y: 0
+        width: 79
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,55 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: button_menu_1
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 24
-        width: 67
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd71b3c14ff59be30800000000000000
-      internalID: 4519749203093297115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: button_menu_2
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 6
-        width: 67
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 88db59e719794f1e0800000000000000
-      internalID: -2164938869708571256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       button_menu_0: 8601295146896742308
-      button_menu_1: 4519749203093297115
-      button_menu_2: -2164938869708571256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
